@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="jquery-2.0.2.js"></script>
+    <script src="jquery.stellar.min.js"></script>
+    <script src="script.js"></script>
+    <script type="javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+
+        .welcome {
+            background: url(images/mac.jpg);
+            background-size: cover;
+            height: 100%;
+            max-height: 100%;
+            overflow: auto;
+            background-attachment: fixed;
+
+        }
+
+        .contact {
+            background: url("images/wood_1.png");
+        }
+
+        .lead-color {
+            color: #E0CB77;
+        }
+
+        .middle {
+            background: url(images/middle.jpg);
+        }
+
+        .hr-color {
+            border-color: #E0CB77;
+        }
+
+        .custom-panel {
+            background-color: transparent;
+            border-color: #E0CB77;
+            color: white;
+        }
+
+
+
+        .consolas {
+            font-family: Consolas, monaco, monospace;
+
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+        }
+
+        .hideme {
+            opacity: 0.0;
+        }
+
+        .overlay:after {
+            background: rgba(0, 0, 0, 0.6);
+            content: "";
+            width: 100%;
+            height: auto;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .overlay {
+            position: relative;
+            z-index: 1;
+        }
+
+        body {
+            /*padding-top: 20px;*/
+            height: 100%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="" class="navbar-brand">Personal Website</a>
+        </div>&lt;!&ndash; Navbar Header&ndash;&gt;
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+            <a href="" class="btn btn-warning navbar-btn navbar-right">Download Now</a>
+            <ul class="nav navbar-nav">
+                <li><a href="#profile">Profile</a>
+                <li><a href="#educationAndQualification">Education and Qualifications</a>
+                <li><a href="#internship">Internship History</a>
+                <li><a href="#abilities">Skills and Abilities</a>
+                <li><a href="#projects">Notable faculty projects</a>
+                <li><a href="#contact">Contact</a>
+            </ul>
+        </div>
+    </div>&lt;!&ndash; End Container&ndash;&gt;
+</nav>&lt;!&ndash; End navbar &ndash;&gt;-->
+
+
+<section class="welcome overlay" data-stellar-background-ratio="0.5">
+    <div id="welcomeContent">
+        <div class="navigation text-center consolas"
+             style="position:relative; display: block; top: 10%; color: #e4e3df; opacity: 1.0; ">
+            <a href="#profile" style="color: #E0CB77;">Profile</a>
+            <a href="#abilities" style="color: #E0CB77">Skills</a>
+            <a href="#educationAndQualification" style="color: #E0CB77">Education</a>
+            <a href="#internship" style="color: #E0CB77">Internship</a>
+            <a href="#projects" style="color: #E0CB77">Projects</a>
+            <a href="#contact" style="color: #E0CB77">Contact</a>
+        </div>
+        <div style="position:relative; display: block; top: 60%; color: #e4e3df; opacity: 1.0;">
+            <h1 class="text-center consolas">Atanas Dimitrovski</h1>
+
+            <h3 class="text-center consolas">Computer science student</h3>
+        </div>
+    </div>
+</section>
+
+<div>
+    <!-- details and about me-->
+    <div class="container" id="profile">
+        <section>
+
+            <h1 class="text-center">Profile</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="row hideme">
+                <div class="col-md-4">
+                    <img src="images/profile.JPG" class="img-circle" alt="" width="320" height="394">
+                </div>
+                <div class="col-md-5">
+                    <h3 class="text-muted">About me</h3>
+                    <hr>
+                    <p class="text-justify">
+                        Currently a student, who seeks an opportunity to improve his current and learn new
+                        skills for future use. I have been passionate about computer science ever since my first
+                        encounter with a computer. Throughout the years, i have faced many challenges, which helped me
+                        grow as a software engineer. The fields that i am most interested in and would like to explore
+                        further are web development, software development and big data. Also I like working in a team
+                        and consider myself a good team player.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-muted">Details</h3>
+                    <hr>
+                    <h4 class="lead-color">Name:</h4>
+
+                    <p>Atanas Dimitrovski</p>
+
+                    <h4 class="lead-color">Age:</h4>
+
+                    <p>21 years</p>
+                    <h4 class="lead-color">Location:</h4>
+
+                    <p>Skopje, Macedonia</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <br>
+</div>
+
+<div>
+    <div class="container">
+        <section id="abilities">
+            <h1 class="text-center">Skills and Abilities</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="row hideme" id="skills">
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading text-center" style="background-color: transparent">Comfortable with
+                        </div>
+                        <div class="panel-body">
+                            Java programming language
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading text-center" style="background-color: transparent">Familiar with</div>
+                        <div class="panel-body">
+                            Android development -
+                            C# programming language -
+                            PHP scripting language -
+                            JavaScript programming language -
+                            SQL programming language -
+                            Spring framework -
+                            AngularJS JavaScript framework
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading text-center" style="background-color: transparent">Basic knowledge
+                        </div>
+                        <div class="panel-body">
+                            CakePHP framework -
+                            JUnit unit testing framework -
+                            Python programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="middle overlay" data-stellar-background-ratio="0.5">
+    <!-- //Experience-->
+    <div class="container" id="educationAndQualification">
+        <section>
+            <h1 class="text-center" style="color: white">Education and Qualifications</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="row hideme">
+                <div class="col-sm-6">
+                    <div class="panel panel-default text-center custom-panel" id="educationPanelOne">
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h4>Faculty of Computer Science and Engineering</h4>
+
+                            <p>Currently student in fourth year at the Faculty of Computer Science and Engineering
+                                within the UKIM, in the Computer Science and Engineering program</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default text-center custom-panel" id="educationPanelTwo">
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-education"></span>
+                            <h4>Georgi Dimitrov High School</h4>
+
+                            <p>High School education at Georgi Dimitrov High School, Skopje</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <!--//Abilities-->
+    <div class="container">
+        <section id="internship">
+
+            <h1 class="text-center" style="color: white">Internship History</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="row hideme">
+                <div class="col-sm-6">
+                    <div class="panel panel-default text-center custom-panel" id="internshipPanelOne">
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-briefcase"></span>
+                            <h4>Software engineer at EduSoft</h4>
+
+                            <p>Developed a library in C# for executing Lua scripts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel panel-default text-center custom-panel" id="internshipPanelTwo">
+                        <div class="panel-body">
+                            <span class="glyphicon glyphicon-briefcase"></span>
+                            <h4>Back-end developer at Polar Cape</h4>
+
+                            <p>Developed the back-end for a Resource management project
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+</div>
+
+
+<div>
+    <div class="container">
+        <section id="projects">
+            <h1 class="text-center">Notable faculty projects</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="row hideme" id="projectsRowOne">
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent"> TV Shows</div>
+                        <div class="panel-body text-center">
+                            Web application for TV shows information, using Spring framework and AngularJS
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent">Take me home</div>
+                        <div class="panel-body text-center">
+                            Android application for listing lost dogs
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent">Citex Algorithm
+                            implementation
+                        </div>
+                        <div class="panel-body text-center">
+                            Citex algorithm implementation using python
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row hideme" id="projectsRowTwo">
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent">Movie Suggester
+                        </div>
+                        <div class="panel-body text-center">
+                            Web application for suggesting movies, using CakePHP framework
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent">Maze Craze</div>
+                        <div class="panel-body text-center">
+                            Maze game using C# programming language
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center" style="background-color: transparent">Column family database</div>
+                        <div class="panel-body text-center">
+                            Data import, usage and performance analysis in Apache HBase
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</div>
+
+<div class="contact overlay">
+    <div class="container">
+        <section id="contact">
+            <h1 class="text-center" style="color: white;">Contact</h1>
+            <hr class="hr-color">
+            <br>
+
+            <div class="text-muted text-center" style="margin-bottom: 10%">
+                <h4><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> atanas994@hotmail.com</h4>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+
+<script>
+
+    $.stellar();
+</script>
+
+
+</body>
+</html>
